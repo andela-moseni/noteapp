@@ -1,1 +1,32 @@
-%h1 Welcome to NoteNote app :)
+#banner
+  .banner_content
+    %h1 NoteBook
+    %p Your online Notebook. I love to write :)
+    %button= link_to "Sign Up", new_user_registration_path
+  
+#testimonial
+  .wrapper
+    %p.quote "A web of notes"
+    %p.name - Mercy Oseni
+
+#callouts
+  .callout_inner
+    .wrapper
+      .callout
+        %h2 Notes
+        %p I love to keep notes
+      .callout
+        %h2 ToDos
+        %p My Todo list is here...
+      .callout
+        %h2 AI/ML
+        %p I will love to build an intelligent agent
+
+#bottom_cta
+  .wrapper
+    %h2 Join our community
+    %p Kindly Sign Up
+    %button= link_to "Click me :)", new_user_registration_path
+
+%footer
+  %p &copy; Mercy Oseni
